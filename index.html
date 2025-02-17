@@ -3,22 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noesis - Intelligent Solutions</title>
-
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/favicon/site.webmanifest">
-    <meta name="theme-color" content="#1A1A2E">
+    <title>NoesisAI - AI-Powered News & Market Guide</title>
     
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <style>
         .gradient-bg {
-            background: linear-gradient(135deg, #1A1A2E, #16213E);
+            background: linear-gradient(135deg, #1a1a2e, #2C3E50);
         }
         .accent-gradient {
-            background: linear-gradient(135deg, #0F3460, #E94560);
+            background: linear-gradient(135deg, #3498DB, #2C3E50);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -35,57 +28,105 @@
         .hover-scale:hover {
             transform: scale(1.05);
         }
+        .custom-shadow {
+            box-shadow: 0 4px 6px -1px rgba(52, 152, 219, 0.1), 0 2px 4px -1px rgba(52, 152, 219, 0.06);
+        }
     </style>
 </head>
 <body class="bg-gray-900 text-white">
+    <!-- Hero Section -->
     <header class="gradient-bg py-20 px-4">
         <div class="container mx-auto max-w-6xl">
             <nav class="flex justify-between items-center mb-16">
-                <h1 class="text-4xl font-bold accent-gradient">Noesis</h1>
+                <div class="flex items-center gap-2">
+                    <h1 class="text-4xl font-bold">NoesisAI</h1>
+                </div>
                 <div class="space-x-6">
                     <a href="#features" class="hover:text-blue-400">Features</a>
-                    <a href="#contact" class="hover:text-blue-400">Contact</a>
+                    <a href="#download" class="hover:text-blue-400">Download</a>
                 </div>
             </nav>
+            
             <div class="flex flex-col md:flex-row items-center justify-between">
                 <div class="md:w-1/2 mb-10 md:mb-0">
-                    <h2 class="text-5xl font-bold mb-6 fade-in">Empowering Businesses with Smart Technology</h2>
-                    <p class="text-xl mb-8 fade-in">Innovative solutions designed to enhance efficiency and performance. Discover how Noesis transforms your workflow.</p>
-                    <a href="#features" class="bg-blue-500 text-white px-8 py-3 rounded-full hover-scale">
-                        Learn More
-                    </a>
+                    <h2 class="text-5xl font-bold mb-6 fade-in">Your AI-Powered News & Market Guide</h2>
+                    <p class="text-xl mb-8 fade-in text-gray-300">STAY INFORMED. STAY AHEAD. Let AI decode the world for you with real-time news analysis, market insights, and personalized updates.</p>
+                    <div class="flex space-x-4">
+                        <a href="#download" class="bg-blue-600 text-white px-8 py-3 rounded-full hover-scale custom-shadow">
+                            Get Started
+                        </a>
+                    </div>
                 </div>
                 <div class="md:w-1/2">
-                    <img src="/mnt/data/3.png" alt="Noesis UI Preview" class="mx-auto rounded-3xl shadow-2xl">
+                    <img src="/api/placeholder/400/800" alt="NoesisAI App Interface" class="mx-auto rounded-3xl shadow-2xl">
                 </div>
             </div>
         </div>
     </header>
 
+    <!-- Features Section -->
     <section id="features" class="py-20 px-4 bg-gray-800">
-        <div class="container mx-auto max-w-6xl text-center">
-            <h2 class="text-4xl font-bold mb-16">🚀 Core Features</h2>
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl font-bold mb-16 text-center">🌟 Essential Features</h2>
             <div class="grid md:grid-cols-3 gap-10">
-                <div class="p-6 hover-scale">
-                    <img src="/mnt/data/6.png" alt="Feature 1" class="mx-auto mb-4">
-                    <h3 class="text-2xl font-bold mb-4">AI-Driven Insights</h3>
-                    <p>Leverage data analytics to make informed decisions and drive success.</p>
+                <div class="text-center p-6 hover-scale bg-gray-900 rounded-xl">
+                    <div class="text-5xl mb-4">🤖</div>
+                    <h3 class="text-2xl font-bold mb-4 text-blue-400">AI-Powered Analysis</h3>
+                    <p class="text-gray-300">Get instant insights and analysis on news and market trends, powered by advanced AI technology.</p>
                 </div>
-                <div class="p-6 hover-scale">
-                    <h3 class="text-2xl font-bold mb-4">Automation</h3>
-                    <p>Streamline repetitive tasks with intelligent automation systems.</p>
+                <div class="text-center p-6 hover-scale bg-gray-900 rounded-xl">
+                    <div class="text-5xl mb-4">📊</div>
+                    <h3 class="text-2xl font-bold mb-4 text-blue-400">Market Intelligence</h3>
+                    <p class="text-gray-300">Track market trends, get real-time updates, and make informed decisions with AI-driven market analysis.</p>
                 </div>
-                <div class="p-6 hover-scale">
-                    <h3 class="text-2xl font-bold mb-4">Secure Cloud Integration</h3>
-                    <p>Seamlessly connect your business with cloud-based technology.</p>
+                <div class="text-center p-6 hover-scale bg-gray-900 rounded-xl">
+                    <div class="text-5xl mb-4">💡</div>
+                    <h3 class="text-2xl font-bold mb-4 text-blue-400">Smart Insights</h3>
+                    <p class="text-gray-300">Ask questions, get explanations, and understand complex news stories with our AI chat feature.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="contact" class="py-10 px-4 border-t border-gray-700">
+    <!-- App Screenshots -->
+    <section class="py-20 px-4 gradient-bg">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl font-bold mb-16 text-center">See NoesisAI in Action</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <img src="/api/placeholder/400/800" alt="News Feed" class="rounded-3xl shadow-lg hover-scale">
+                <img src="/api/placeholder/400/800" alt="Market Analysis" class="rounded-3xl shadow-lg hover-scale">
+                <img src="/api/placeholder/400/800" alt="AI Chat Interface" class="rounded-3xl shadow-lg hover-scale">
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="py-20 px-4 bg-gray-800">
         <div class="container mx-auto max-w-6xl text-center">
-            <p>&copy; 2025 Noesis. All rights reserved.</p>
+            <h2 class="text-4xl font-bold mb-8">Download NoesisAI Today</h2>
+            <p class="text-xl mb-12 text-gray-300">Available on Android and iOS</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="hover-scale">
+                    <img src="/api/placeholder/200/60" alt="Download on App Store" class="rounded-lg">
+                </a>
+                <a href="#" class="hover-scale">
+                    <img src="/api/placeholder/200/60" alt="Get it on Google Play" class="rounded-lg">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 px-4 border-t border-gray-800">
+        <div class="container mx-auto max-w-6xl">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400">&copy; 2025 NoesisAI. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-blue-400">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400">Contact Us</a>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
