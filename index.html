@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noesis - Intelligent Solutions</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <meta name="theme-color" content="#1A1A2E">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1A1A2E, #16213E);
+        }
+        .accent-gradient {
+            background: linear-gradient(135deg, #0F3460, #E94560);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="gradient-bg py-20 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <nav class="flex justify-between items-center mb-16">
+                <h1 class="text-4xl font-bold accent-gradient">Noesis</h1>
+                <div class="space-x-6">
+                    <a href="#features" class="hover:text-blue-400">Features</a>
+                    <a href="#contact" class="hover:text-blue-400">Contact</a>
+                </div>
+            </nav>
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-5xl font-bold mb-6 fade-in">Empowering Businesses with Smart Technology</h2>
+                    <p class="text-xl mb-8 fade-in">Innovative solutions designed to enhance efficiency and performance. Discover how Noesis transforms your workflow.</p>
+                    <a href="#features" class="bg-blue-500 text-white px-8 py-3 rounded-full hover-scale">
+                        Learn More
+                    </a>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="/mnt/data/3.png" alt="Noesis UI Preview" class="mx-auto rounded-3xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="py-20 px-4 bg-gray-800">
+        <div class="container mx-auto max-w-6xl text-center">
+            <h2 class="text-4xl font-bold mb-16">🚀 Core Features</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="p-6 hover-scale">
+                    <img src="/mnt/data/6.png" alt="Feature 1" class="mx-auto mb-4">
+                    <h3 class="text-2xl font-bold mb-4">AI-Driven Insights</h3>
+                    <p>Leverage data analytics to make informed decisions and drive success.</p>
+                </div>
+                <div class="p-6 hover-scale">
+                    <h3 class="text-2xl font-bold mb-4">Automation</h3>
+                    <p>Streamline repetitive tasks with intelligent automation systems.</p>
+                </div>
+                <div class="p-6 hover-scale">
+                    <h3 class="text-2xl font-bold mb-4">Secure Cloud Integration</h3>
+                    <p>Seamlessly connect your business with cloud-based technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-10 px-4 border-t border-gray-700">
+        <div class="container mx-auto max-w-6xl text-center">
+            <p>&copy; 2025 Noesis. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
